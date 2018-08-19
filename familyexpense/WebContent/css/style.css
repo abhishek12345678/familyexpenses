@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+body
+{
+	
+    background-image:url("background.jpg");
+   background-size:100% 100%;
+    
+}
+h1
+{
+	text-align:center;
+	color:red;
+}
+h3
+{
+	text-align:center;
+	color:red;
+}

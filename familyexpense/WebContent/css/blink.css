@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+   blink, .blink {
+            animation: blinker 1s linear infinite;
+color:red;
+
+font-size:20px;
+        }
+
+       @keyframes blinker {  
+            100% { opacity: 0; }
+       }

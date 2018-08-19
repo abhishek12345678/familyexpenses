@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f1f1f1;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 5px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+form
+{
+
+ margin:20px 30px 20px 230px;
+ width: 50%;
+ height: -30%;
+
+}
+body {
+   
+    background-image:url("background.jpg");
+   background-size:100% 115%;
+    
+}
+h2
+{
+text-align: center;
+color:RED;
+}
+ .button1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button1:hover {background-color: #3e8e41}
+
+.button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+ 
+  <a href='expenses.html'> Expenses Amount</a>
+  <a href='EstimationAmount.jsp'>Enter your Estimation Amount</a>
+ <a href='accountsetting.html'>Account Settings</a>	
+	<a href='button.html'>seprate update</a>
+	<a href='updateall.jsp'>All Update</a>
+	<a href='del.jsp'>delete</a>
+	<a href='showdata.jsp'>show</a>
+	<a href='registereduser.html'>Logout</a>
+</div>
+
+<form action="AccountServlet" method="post">	
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b style="color:RED">Name</b>
+<input type="text" name="txtName" placeholder="UserName" pattern="[a-zA-Z][a-zA-Z ]{2,}" title="Name must be atleast three Chracters" required/>
+			</label>
+ <lable><select>
+				<option> What is your nick name?  </option]>
+				<option> Favoriate Teacher Name </option>
+				<option> Favoriate fruit </option>
+				<option> Favoriate Colour </option>
+				</select></lable>
+				<input type="text" name="nick" placeholder="write your security question" pattern="[a-zA-Z][a-zA-Z ]{2,}" title="ans must in chracter" required/>
+				
+    <label for="psw"><b  style="color:RED">Phone Number</b><input type="tel" pattern="^(?:\97105)[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$" title="start from 97105" name="phone" placeholder="Min 6 chars"  />
+</label>		
+  
+		
+        
+    <button type="submit">Submit</button>
+   
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"></button>
+     <span class="psw"><a href="ForgetPassword.html">ChangePassword</a></span>
+    
+   
+  </div>
+</form>
+
+</body>
+</html>
